@@ -1,0 +1,3 @@
+FROM insaneworks/centos-chef
+ADD $app$/kitty.rb /tmp/chef/kitty.rb
+CMD chef-apply tmp/chef/kitty.rb
